@@ -3,16 +3,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>b256da54-b7fd-45d4-b301-93b69db75c88</ProjectGuid>
+    <ProjectGuid>d765d06a-f2d2-43fd-84bc-f0f20949a460</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>seLab8.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>GitHubVS2015</Name>
-    <RootNamespace>GitHubVS2015</RootNamespace>
+    <Name>seLab8</Name>
+    <RootNamespace>seLab8</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,9 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="1.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="seLab8.py" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

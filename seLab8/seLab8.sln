@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "GitHubVS2015", "GitHubVS2015\GitHubVS2015.pyproj", "{B256DA54-B7FD-45D4-B301-93B69DB75C88}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "seLab8", "seLab8\seLab8.pyproj", "{D765D06A-F2D2-43FD-84BC-F0F20949A460}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,8 +11,8 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B256DA54-B7FD-45D4-B301-93B69DB75C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B256DA54-B7FD-45D4-B301-93B69DB75C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D765D06A-F2D2-43FD-84BC-F0F20949A460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D765D06A-F2D2-43FD-84BC-F0F20949A460}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
