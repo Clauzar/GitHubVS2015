@@ -3,12 +3,10 @@ from PySide import QtCore, QtGui
 
 
 class ScribbleArea(QtGui.QWidget):
-    """
-      this scales the image but it's not good, too many refreshes really mess it up!!!
-    """
+
     def __init__(self, parent=None):
         super(ScribbleArea, self).__init__(parent)
-
+        layout = QtGui.QVBoxLayout()
         self.setAttribute(QtCore.Qt.WA_StaticContents)
         self.modified = False
         self.scribbling = False
@@ -18,7 +16,11 @@ class ScribbleArea(QtGui.QWidget):
 #       self.image = QtGui.QImage()
         self.image = QtGui.QImage(imageSize, QtGui.QImage.Format_RGB32)
         self.lastPoint = QtCore.QPoint()
-
+        self.clearer = QtGui.QPushButton('clear')
+        layout.addWidget(self.clearer)
+        self.setLayout(layout)
+        self.clearer.clicked.connect(self.clear)
+        
     def openImage(self, fileName):
         loadedImage = QtGui.QImage()
         if not loadedImage.load(fileName):
@@ -113,7 +115,9 @@ class ScribbleArea(QtGui.QWidget):
 
     def penWidth(self):
         return self.myPenWidth
-
+    
+    def clear(self):
+        self.clearImage()
 
 class MainWindow(QtGui.QMainWindow):
     def __init__(self):
